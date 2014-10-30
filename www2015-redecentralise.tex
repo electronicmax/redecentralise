@@ -153,6 +153,12 @@ In the second half of this paper, we select specific such functionality in the c
 
 In the following sections, we first summarise the efforts of the \emph{indie web camp} movement towards building technologies for enabling end-users of the Web to take more control of their data. We then focus on this analysis of microblogging as a platform adapted to a decentralised setting.  Finally, we introduce two different approaches to decentralised Web architectures interoperating  through the Web in a decentralised manner to provide an effective microblogging platform that uses Web standards.
 
+\section{Motivation}
+
+Many have expressed a variety of views from the societal, cultural, to the psychological perils of the ever-widening gap in power and influence resulting from the consolidation of the world's information brokers to a few massive supersites, versus the rest of the Web, including individuals who consume and share information themeslvese.
+
+People have expressed many motivations for seeking to return to a more decentralised Web. Currently, Facebook ``controls'' an increasing amount of the media industry, spanning news to entertainment, by fully controlling how much attention and exposure each story gets.  A recent study surveydd that 40\% of American adults got their news from Facebook, the single largest source  This control has resulted in a number of peculiar behaviours 
+
 \section{Survey of ``Indie Web'' efforts}
 
 There has been a recent rise in efforts to 're-decentralise' the Web and reduce reliance upon large online information brokers for various reasons, spanning privacy, the protection of free-speech, and the desire to have greater control. However, as such efforts have themselves been distributed and highly decentralised, there have not been concerted efforts to identify how or whether these projects fit together, or to even identify common functionality that such projects have sought to collectively achieve.  In this section, we summarise the results of sampling and surveying a large number of such indie web projects, first to identify what each of these projects are meant to achieve, and second, to reflect upon the underlying needs that such projects indicate.
@@ -174,7 +180,7 @@ type & description & examples \\ \hline
 \end{tabular}
 \end{figure*}
 
-The systems 
+From the YYY systems surveyed, we selected the XXX systems that were inherently decentralised and designed for user-
 
 \subsubsection{Personal Cloud projects}
 
@@ -182,26 +188,28 @@ The first category consist of \emph{personal cloud} projects, which consist of s
 
 On top of such underlying operating systems, typically lies an ensemble of services, typically consisting of mail servers, a standard Web server, file sharing services and a database. FreedomBox is one of the original and most comprehensive of such platforms, which offers both standard e-mail, web and file storage but also provides utilities for establishing secure communications (through PGP tools and tor).  Sandstorm\footnote{} takes a slightly different approach, designing a docker-inspired modular architecture for installing and configuring web-apps that have traditionally required manual web-server configuration. 
 
-
 \subsubsection{Encrypted/Anonymous Overlay Networks}
 
-The second category consist of tools for secure and anonymous communications.  These projects range from network-level systems that provide addressig and routing (such as cjdns and i2p) to end-user applications (such as Bitmessage Briar), to projects that straddle the two (such as tor). While some projects work with existing IP and TCP based applications (including web browsing), other
+The second category consist of tools for secure and anonymous communications.  These projects range from network-level systems that provide addressing and routing (such as cjdns and i2p) to end-user applications (such as Bitmessage Briar), to projects that straddle the two (such as tor). While some projects work to route existing IP- and TCP- applications (including the Web), others are application specific (e.g. specific to messaging, despite being payload independent).
 
-cjdns
-tor
-i2p
-Bitmessage
-Briar
+As described later, the projects in this category seem to all have several features in common , they provide different degrees of support for the underlying connectivity;including addressing and message routing) , while others address connectivity issues, including partially disconnection and firewall traversal
 
-\subsection{Distributed Storage Environment}
-Bitcloud 
-DHTs
-Bittorrent 
-MaidSafe
-BaseParadigm
-Avatar
+% cjdns
+% tor
+% i2p
+% Bitmessage
+% Briar
 
-\subsection{Results: Needs }
+\subsection{Distributed Storage Environments}
+% Bitcloud 
+% DHTs
+% Bittorrent 
+% MaidSafe
+% BaseParadigm
+% Avatar
+
+\subsection{Results: Needs}
+
 \subsubsection{Addressability}
 \subsubsection{Reachability}
 \subsubsection{Anonymity}
