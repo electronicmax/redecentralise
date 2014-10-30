@@ -30,7 +30,7 @@
 
 \begin{document}
 
-\title{Re-decentralising the Web: Practical Considerations and Implications}
+\title{Re-decentralising the Web: Current Efforts and Practical Implications}
 % \subtitle{[Extended Abstract]
 % \titlenote{A full version of this paper is available as
 % \textit{Author's Guide to Preparing ACM SIG Proceedings Using
@@ -143,48 +143,65 @@
 
 \section{Introduction}
 
-The increasing centralisation of the Web remains the greatest threats to its continued existence as a democratic and ubiquitous shared medium of communication. Although originally architected as a decentralised system, to ensure fair and equal access to all users, today the Web has become dominated by very large institutions that each control all of the traffic that flows within their respective borders.  The result is that such institutions harbour an disproportionately large percentage of Web traffic, and, in turn, exercise an unprecedented degree of control over its governance and operation.
+The increasing centralisation of the Web remains the greatest threats to its continued existence as a democratic and ubiquitous shared medium of communication. Although architected as a decentralised system to ensure fair and equal access to all users, today the Web has become a highly centralised environment, dominated by very large institutions that each control all of the traffic that flows within their respective borders.  The result is that such institutions harbour an disproportionately large percentage of Web traffic, and, in turn, exercise an unprecedented degree of control over its governance and operation.
 
-The very definition of a democratic medium requires that its administration and governance lie with its individual participants.  In this paper, coinciding with the 25th anniversary of the Web, we consider how Web end-users might be given greater autonomy as data controllers through added functionality located at the user, in many cases directly within the Web client itself. 
-
+The very definition of a democratic medium requires that its administration and governance lie with its individual participants.  In this paper, coinciding with the 25th anniversary of the Web, we look at current citizen-led approaches to ``take back the Web'' in order to understand how future Web architectures might support greater autonomy for Web end-users.  The goal of this analysis is to, first, identify what is seen to be most lacking about the current information environments on the Web, and second, to understand the variety of approaches taken to address such needs.  Indeed, merely the notion of ``taking it back'' is not necessarily clear; such approaches call variations of degrees under which the responsibility of being a data controller moves back to end-users and software under their control, running, in some cases directly within the browser itself.  It is for this purpose that survey both the ways and 
+	
 For the purpose of identifying functionality most needed towards enabling greater end-user autonomy of Web users, we start by identifying, collating, and the infastructure efforts recently produced by the ``indie web'' community.  From this analysis, we identify common functionality offered by each, and reflect on what such underlying needs such functionality  are meant to address.
 
-In the second half of this paper, we select specific such functionality in the context of an example, focusing on microblogging service as an archetypal social platform.  
-
- basic data sharing activities such services currently provide to deliver their user experiences. For each of these activities, we consider how such activities can be adapted to a decentralised fdsetting, and discuss the implications for web architectures in the future.
+In the second half of this paper, we select specific such functionality in the context of an example, focusing on microblogging service as an archetypal social platform.  In this analysis, we identify the basic data sharing activities such services currently provide to deliver their user experiences. For each of these activities, we consider adapting to a decentralised setting, and discuss the implications for web architectures in the future.
 
 In the following sections, we first summarise the efforts of the \emph{indie web camp} movement towards building technologies for enabling end-users of the Web to take more control of their data. We then focus on this analysis of microblogging as a platform adapted to a decentralised setting.  Finally, we introduce two different approaches to decentralised Web architectures interoperating  through the Web in a decentralised manner to provide an effective microblogging platform that uses Web standards.
 
-\section{Related Work}
+\section{Survey of ``Indie Web'' efforts}
+
+There has been a recent rise in efforts to 're-decentralise' the Web and reduce reliance upon large online information brokers for various reasons, spanning privacy, the protection of free-speech, and the desire to have greater control. However, as such efforts have themselves been distributed and highly decentralised, there have not been concerted efforts to identify how or whether these projects fit together, or to even identify common functionality that such projects have sought to collectively achieve.  In this section, we summarise the results of sampling and surveying a large number of such indie web projects, first to identify what each of these projects are meant to achieve, and second, to reflect upon the underlying needs that such projects indicate.
+
+We attempted to get a representative sample using a combination of approaches: first, we identified two large wikis directories dedicated to such projects, which included the \emph{Indie Web}\footnote{} and the \emph{Alternative Internet}\footnote{}.
+
+\begin{figure*}[tb]
+\begin{tabular}{ l p{2.8in} p{2.3in} }
+type & description & examples \\ \hline
+  ``Personal Clouds'' & Largely standalone containers for hosting end-user web applications on personal hardware and VMs, including e-mail, calendaring tools, file storage and sharing & FreedomBox, Owncloud, arkOS, Sandstorm \\
+  Anonymising Networks & support anonymous communciations, either at the packet-level or message-level, and robust/overlay routing & cjdns, i2p, bitmessage, briar \\
+  Distributed Storage Environments & provide storage abstractions over multiple nodes & cjdns \\
+  Other & other related services include: identity providers, social network applications, & \\
+\end{tabular}
+\end{figure*}
 
 \subsection{Personal Cloud projects}
-FreedomBox
-Owncloud
-arkos
+
+The first category consist of \emph{personal cloud} projects, which consist of software (and in some cases, hardware) platforms designed to allow end-users to more easily set-up, host and manage web applications for their personal or private use.  Such projects vary considerably in scope and complexity. Some projects encompass custom distributions of a popular FLOSS operating systems (typically GNU/Linux), usually customised to provide simplified set-up and administration on embedded hardware, such as Raspberry PIs (e.g. xXX) or BeagleBones (e.g. XXX), or commodity hosting services (e.g. EC2 or Azure). 
+
+On top of such underlying operating systems, typically lies an ensemble of services, typically consisting of mail servers, a standard Web server, file sharing services and a database. These are the most
 
 \subsection{Encrypted/Anonymous Overlay Networks}
+The second category consist of plat
 cjdns
 tor
 i2p
+Bitmessage
+Briar
 
 \subsection{Distributed Storage Environment}
+Bitcloud 
 DHTs
 Bittorrent 
 MaidSafe
+BaseParadigm
+Avatar
 
-++
-
-Addressability
-Reachability
-Anonymity
-Secure & authenticated communication
-Pub/sub functionality
-Data storage & apps
-
-
-\subsection{Web architectures}
-Ctrlio?
-
+\subsection{Needs}
+\subsubsection{Addressability}
+\subsubsection{Reachability}
+\subsubsection{Anonymity}
+\subsubsection{Secure \& authenticated communication}
+\subsubsection{Pub/sub functionality}
+\subsubsection{Data storage}
+\subsubsection{Distributed Consensus \& Fault Tolerance}
+	Askemos
+\subsubsection{Application Development Environments}
+\subsection{End-user service composition}
 
 \section{Desired Properties}
 
@@ -197,7 +214,7 @@ End-user Control
 Privacy and Anonymity
 Technical Implications
 
-\subsetion{Implementations}
+\subsection{Implementations}
 Case Example: Microblogging
 	Broadcast posts/Timeline Syndication
 	Replies and comments
