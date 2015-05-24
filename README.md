@@ -1,4 +1,4 @@
-WWW2015-Redecentralise
+Redecentralising the Web 
 ====================
 
-Re-decentralising the Web paper for WWW2015
+Manuscript for CACM 2015
