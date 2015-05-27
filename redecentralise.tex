@@ -61,7 +61,7 @@
 % without further effort on your part as the last section in
 % the body of your article BEFORE References or any Appendices.
 
-\numberofauthors{5} %  in this sample file, there are a *total*
+%\numberofauthors{5} %  in this sample file, there are a *total*
 % of EIGHT authors. SIX appear on the 'first-page' (for formatting
 % reasons) and the remaining two appear in the \additionalauthors section.
 %
@@ -126,9 +126,10 @@
 % Just remember to make sure that the TOTAL number of authors
 % is the number that will appear on the first page PLUS the
 % number that will appear in the \additionalauthors section.
+}
 
 \maketitle
-\begin{Introduction}
+\begin{abstract}
 The intent of the original decentralised design of the Web was to make it easy for individuals to share and access information by simply setting up a web server and using a browser.  Yet, instead of individuals running their own servers, today, a handful of large social and data platform providers serve and host a vast majority of end-user data.  In exchange for this convenience, these platforms have assumed a place of strategic importance in peoples' lives; not only establishing an inextricable dependence on their services, but also the ability to arbitrarily administer targeted advertising, behavioural manipulation, and nearly constant surveillance.
 
 In response, many efforts have sought to `re-decentralise' the web, that is allow end-users to rely less on such brokers, and retain greater control over their data.  In this paper, we critically interrogate what this means; is this a call to extend the model of a Web client to provide end-users with information storage and serving capabilities?  We posit that, architecturally, with increasingly advanced capabilities of web browsers, the Web is ready for increased functionality centred at the end user for fostering greater responsiblity and control.  
@@ -138,7 +139,7 @@ Yet, how to deliver this vision of democratisation remains unclear.  In order fo
 We first analyse 75 ``indie web'' projects that have this goal, deriving four categories of systems. Next, based on the capabilities such systems provide, we provide an analysis of the needs in greatest demand, which, beyond information storage and hosting, include universal addressibility in the face of dynamic network connectivity, private, secure and anonymous communications, and simple programmability.  We then derive a set of design requirements for extending Web clients, and provide the example of a decentralised microblogging environment that maintains the Web's principles of minimal  commitment to achieve maximum interoperability and support for future change.
 \end{abstract}
 
-\section{Introduction 2}
+\section{Introduction}
 The increasing centralisation of the Web remains the greatest threats to its continued existence as a democratic and ubiquitous shared medium of communication. Although architected as a decentralised system to ensure fair and equal access to all users, today the Web has become a highly centralised environment, dominated by very large institutions that each control all of the traffic that flows within their respective borders.  The result is that such institutions harbour an disproportionately large percentage of Web traffic, and, in turn, exercise an unprecedented degree of control over its governance and operation.
 
 The very definition of a democratic medium requires that its administration and governance lie with its individual participants.  In this paper, coinciding with the 25th anniversary of the Web, we look at current citizen-led approaches to ``take back the Web'' in order to understand how future Web architectures might support greater autonomy for Web end-users.  The goal of this analysis is to, first, identify what is seen to be most lacking about the current information environments on the Web, and second, to understand the variety of approaches taken to address such needs.  Indeed, merely the notion of ``taking it back'' is not necessarily clear; such approaches call variations of degrees under which the responsibility of being a data controller moves back to end-users and software under their control, running, in some cases directly within the browser itself.  It is for this purpose that survey both the ways and 
@@ -246,7 +247,7 @@ As described later, the projects in this category seem to all have several featu
 %ACKNOWLEDGMENTS are optional
 % \section{Acknowledgments}
 \bibliographystyle{abbrv}
-% \bibliography{www2015-redecentalise}  % sigproc.bib is the name of the Bibliography in this case
-\balancecolumns
+\bibliography{redecentralise}  % sigproc.bib is the name of the Bibliography in this case
+%\balancecolumns
 % That's all folks!
 \end{document}
