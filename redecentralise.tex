@@ -26,11 +26,16 @@
 %
 % For tracking purposes - this is V3.1SP - APRIL 2009
 
-\documentclass{article}
+\documentclass{amsart}
+\usepackage{lmodern}
+% \renewcommand*{\familydefault}{\sfdefault}
+% \renewcommand*\rmdefault{ppl}
+
+
 
 \begin{document}
 
-\title{Re-decentralising the Web}
+\title{Re-Decentralising the Web}
 %\subtitle{[A Proposal]
 % \titlenote{A full version of this paper is available as
 % \textit{Author's Guide to Preparing ACM SIG Proceedings Using
@@ -129,20 +134,23 @@
 }
 
 \maketitle
-\begin{Introduction}
+
+\section{Introduction}
 % The intent of the original decentralised design of the Web was to make it easy for individuals to share and access information by simply setting up a web server and using a browser.  Yet, instead of individuals running their own servers, today, most people primarily use one of several large platform service providers.  Such platforms are continuing to grow at exponential rates, with some, such as Facebook, exceeding 1 billion users at the time of writing.  In exchange for this convenience, these platforms have assumed a critical place at the centres of people's information environments, creating not only an inextricable dependence on their services, but also the ability to manipulate individuals through targeted advertising, behavioural manipulation, and nearly constant surveillance.  Having now amassed a bulk of the world's personal information traces, such platforms now have the unprecedented capacity to further increase their dominance, through large scale statistical insights.  
 
-The intent of the original decentralised design of the Web was to make it easy for individuals to share and access information by simply setting up a web server and using a browser.  Yet, instead of individuals running their own servers, today, a handful of large social and data platform providers serve and host a vast majority of end-user data.  In exchange for this convenience, these platforms have assumed a place of strategic importance in peoples' lives; not only establishing an inextricable dependence on their services, but also the ability to arbitrarily administer targeted advertising, behavioural manipulation, and nearly constant surveillance.
+The intent of the original decentralised design of the Web was to make it easy for individuals to share and access information by simply setting up a web server and using a browser.  Towards this goal, it has succeeded beyond expectations, creating entirely new industries of information sharing and sharing-rich applications and services that have transformed many aspects of people's lives.  Yet, instead of staying decentralised, with individuals running their own servers, today, a handful of large social and data platform providers have grown to control a vast majority of end-user data.  In exchange for this convenience, these platforms have assumed a place of strategic importance within individuals' lives; not only establishing an inextricable dependence on their services, but also the ability to arbitrarily administer targeted advertising, behavioural manipulation, and nearly constant surveillance.
 
-Many have written previously about the many potential dangers of centralisation on the Web, but there is seemingly no end in sight; despite growing concerns over privacy (e.g. \cite{}), long-term access to one's personal information \cite{}, and calls for stronger data protection legislation~\cite{}, platform providers continue to see their user bases grow exponentially year after the next.  Capitalising their immense momentum and valuation, these platforms are now boldly entering new sectors to further aggregate new dimensions of truly personal information, ranging from health & wellbeing to home and personal automation through the Internet of Things.
+Many have written previously about the many potential dangers of centralisation on the Web, but there is seemingly no end in sight; despite growing concerns over privacy (e.g. \cite{}), long-term access to one's personal information \cite{}, and calls for stronger data protection legislation~\cite{}, platform providers continue to see their user bases grow exponentially year after the next.  Capitalising their immense momentum and valuation, these platforms are now boldly entering new sectors to further aggregate new dimensions of truly personal information, ranging from health and wellbeing to home and personal automation through the Internet of Things.  
 
-At the same time, it is now easier than ever for people to run their own web servers and host their own data.  Why, then, do people prefer centralised platform providers? 
+% 
+In response, many efforts have sought to `re-decentralise' the web, that is allow end-users to rely less on such brokers, and retain greater control over their data.  In this paper, we critically interrogate what this means; is this a call to extend the current model of the Web or a call to fundamentally change how some aspect of how the Web currently works?
+
+% At the same time, it is now easier than ever for people to run their own web servers and host their own data.  Why, then, do people prefer centralised platform providers? 
 
 from a variety of perspectives.  % put some of those here. 
  
 % As result,  such as in order to create increased dependence,  more effective behavioural exploitating and advertising.
 
-In response, many efforts have sought to `re-decentralise' the web, that is allow end-users to rely less on such brokers, and retain greater control over their data.  In this paper, we critically interrogate what this means; is this a call to extend the current model of the Web or a call to fundamentally change how some aspect of how the Web currently works?
 
 The precise path to achieve this vision of re-democratisation remains unclear, and much debated.  
 
@@ -153,9 +161,8 @@ We posit that, architecturally, with increasingly advanced capabilities of web b
  of democratisation remains unclear.  Implicit  Specifically, we In order for any such approaches to be successful, they must be simple, open and, essentially minimal.  
 
 We first analyse 75 ``indie web'' projects that have this goal, deriving four categories of systems. Next, based on the capabilities such systems provide, we provide an analysis of the needs in greatest demand, which, beyond information storage and hosting, include universal addressibility in the face of dynamic network connectivity, private, secure and anonymous communications, and simple programmability.  We then derive a set of design requirements for extending Web clients, and provide the example of a decentralised microblogging environment that maintains the Web's principles of minimal  commitment to achieve maximum interoperability and support for future change.
-\end{abstract}
 
-\section{Introduction}
+% \section{Introduction}
 The increasing centralisation of the Web remains the greatest threats to its continued existence as a democratic and ubiquitous shared medium of communication. Although architected as a decentralised system to ensure fair and equal access to all users, today the Web has become a highly centralised environment, dominated by very large institutions that each control all of the traffic that flows within their respective borders.  The result is that such institutions harbour an disproportionately large percentage of Web traffic, and, in turn, exercise an unprecedented degree of control over its governance and operation.
 
 The very definition of a democratic medium requires that its administration and governance lie with its individual participants.  In this paper, coinciding with the 25th anniversary of the Web, we look at current citizen-led approaches to ``take back the Web'' in order to understand how future Web architectures might support greater autonomy for Web end-users.  The goal of this analysis is to, first, identify what is seen to be most lacking about the current information environments on the Web, and second, to understand the variety of approaches taken to address such needs.  Indeed, merely the notion of ``taking it back'' is not necessarily clear; such approaches call variations of degrees under which the responsibility of being a data controller moves back to end-users and software under their control, running, in some cases directly within the browser itself.  It is for this purpose that survey both the ways and 
