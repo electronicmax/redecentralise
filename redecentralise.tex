@@ -138,17 +138,62 @@
 \section{Introduction}
 % The intent of the original decentralised design of the Web was to make it easy for individuals to share and access information by simply setting up a web server and using a browser.  Yet, instead of individuals running their own servers, today, most people primarily use one of several large platform service providers.  Such platforms are continuing to grow at exponential rates, with some, such as Facebook, exceeding 1 billion users at the time of writing.  In exchange for this convenience, these platforms have assumed a critical place at the centres of people's information environments, creating not only an inextricable dependence on their services, but also the ability to manipulate individuals through targeted advertising, behavioural manipulation, and nearly constant surveillance.  Having now amassed a bulk of the world's personal information traces, such platforms now have the unprecedented capacity to further increase their dominance, through large scale statistical insights.  
 
-The Web was designed as a decentralised system to make it easy for individuals to independently share and access information with each other, simply by running a web server and using a browser.  It has revolutionised the ways people share and access information, creating entirely new industries and economies of information sharing.  These industries have, in turn, been driven by a huge variety of sharing-rich applications and services that both people and businesses now rely on across many aspects of their daily operations.  
+The Web was designed as a decentralised system to make it easy for individuals to share and access information with each other, simply by running a web server and using a browser.  It has revolutionised the ways people share and access information, creating entirely new industries and economies of information sharing.  These industries have spawned a huge variety of sharing-rich applications and services that both people and businesses now rely on for many aspects of their daily activities.  
 
 Yet, instead of staying decentralised, a handful of large, commercial social and data platform providers have come to host a vast majority of end-user information.  In exchange for this convenience, people have ceded control to these platforms, granting them places of unprecedented importance at the centres of their information ecosystems. These services, in turn, have sought to take advantage their positions of influence, such as to monetise it through targeted advertising and behavioural manipulation, while simultaneously establishing further long-term dependence on their services.
 
 Many have written previously about the many potential dangers of centralisation on the Web, but there is seemingly no end in sight; despite growing concerns over privacy (e.g. \cite{}), long-term access to one's personal information \cite{}, and calls for stronger data protection legislation~\cite{}, platform providers continue to see their user bases grow exponentially year after the next.  Capitalising on their already immense momentum and strategic positions, these platforms are now boldly entering new sectors to further aggregate new dimensions of truly personal information, ranging from health and wellbeing to home and personal automation through the Internet of Things.  
 
-In response, there has been a growing initiative among makers and hackers to try to `re-decentralise' the web, that is allow end-users to rely less on such brokers, and retain greater control over their data.  There remains, however, little consensus among this movement on how to achieve such a goal; re-decentralisation projects address issues as varied as anonymised routing, to distributed cryptocurrencies and secure filesharing.
+In response, there has been a growing initiative among makers and hackers to try to `re-decentralise' the web, that is allow end-users to rely less on such brokers, and retain greater control over their data.  Despite the concerted efforts of many, little consensus has emerged on how to achieve such a goal; projects labeled `re-decentralisation' have been as widely varied as tools for anonymised messaging and routing, to vocabularies for information interchange, to consensus protocols for distributed cryptocurrencies.
 
-In this paper, we argue that the way forward is re-decentralise the web is to keep it the Web -- addressing only the obstacles that make it difficult for end-users to act as information controllers. While this may seem an obvious statement, many of the thus far proposed approaches have advocated fundamental changes to the protocols and architectures of the Web.  Yet, what such architectures lack is the flexibility and generality that continues to make the Web not only the primary platform of choice for deploying apps and services, and also which benefits from the collective contributions of millions of developers publishing common libraries and tools, thanks to the open standards that underlie it.  
+While some of these proposed projects may play a part in the future information networks of the world, the position of this paper is to preserve, rather than abandon the fundamental architectures, protocols and conventions that have made the Web the world's most open and successful architecture for information exchange,   Instead of replacing one decentralised architecture with yet another, we propose that a more constructive approach is to directly address the problem of letting end-user individuals exercise greater control over the information they create, need and use on the Web, to restore the once-assumed ability for individuals to act as autonomous information controllers on the Web once again. 
 
-To establish some context, we first provide an overview of existing proposed approaches to re-decentralising the Web. We then follow this with three challenges to achieving a Web with end-user as data controller: naming, connectivity and persistent availability.  Finally, we discuss several projects which provide glimpses at what such a Web with individuals in control may look like.
+\section{What is an Information Controller?}
+
+The term \emph{information controller} refers, in the legal sense, to any entity that assumes the responsibility for how a particular collection of information is kept, secured, maintained, shared and used~\cite{}.  Under this general definition, people act as information controllers on a daily basis, of their personal notes, documents, diaries, financial records and other affairs.  People also still routinely act as information controllers of digital information, choosing how to organise, store, back-up and share the files and folders on their desktop and laptop computers. However, on the Web, people rarely act as information controllers; while people may produce information (e.g., write an email, compose a Tweet or Facebook status message, post a YouTube video and so forth), they do not determine where and how this information is stored and handled.  This is left to the platform owners themselves, who have fundamentally assumed the responsibility of managing people's various data, in exchange for certain rights and privileges to it itself.
+
+This important shift from being information controller of one's information to not, has largely gone unnoticed to end-users, except in a few notable and important instances where service providers most visibly violated end-users' expectations about their data.  In the case of Amazon's Kindle reading device, for example when Amazon, in a dispute with a publisher, removed copies of books that individuals had previously purchased from all customers' Kindle devices who had purchased them, people were taken by surprise.  The violation of the expectation that an ebook would, like a real, physical book, continue to be owned unless they lost it or gave it away shook many's confidence in digital goods.   Similarly, when Facebook launched a campaign that allowed them to use photos from individuals' Facebook photo collections in advertisements targeted at both friends of the individual as well as complete strangers, people's expectations of their privacy using the service were violated, leading many to protest.
+
+While such examples serve as, perhaps, among the most visible cases where massive information controllers on the Web upset or surprised individuals,  people have slowly started to become aware to the extent at which platform providers are capitalising on their positions, sometimes at their expense.  The entire field of ``digital marketing'', for example, which has sought to manipulate individuals through the careful use of their own personal information, has brought a nearly constant stream of advertising into people's lives.  
+
+Since so many of these platforms offer services that people value and even find indispensible, many have come to see giving up their status as information controller a \emph{necessary tradeoff} for a digital lifestyle~\cite{}. Those who want to continue to socialise with their friends as provided by platform X, have few alternatives besides to migrate to yet another social network, powered by the same business model, with similar information controller policies.  What happened to open innovation? 
+
+\section{Efforts to Take Back the Web}
+
+Fortunately, civic efforts to re-balance power back to individuals are far from dwindling, with many projects concerted with creating alternatives to the popular social platforms and services but run independently of corporate entities.  
+
+\section{Making the Web for and by Everyone Again}
+
+
+
+
+%Yet, what such architectures lack is the flexibility and generality that continues to make the Web not only the primary platform of choice for deploying apps and services, and also which benefits from the collective contributions of millions of developers publishing common libraries and tools, thanks to the open standards that underlie it.
+
+%What are these obstacles? One has already solved itself; the browser is no longer a read-only surface for rendering static content; the browser has become the core engine for running the huge array of single-page applications (SPA) which has become the de-facto method of providing rich, interactive experiences on-line.  The rise of SPAs for everything from games to desktop office software has driven an ever-increasing hunger for faster, better browser functionality and APIs.  
+
+\section{Hosting Your Own Web Server in 2015}
+
+Given the huge advances across the Web in capability of delivering content, building interactive experiences, mobilising end-users, we have not seen a corresponding increase in ease of setting up a web server.  Today, a person wishing to host content him or herself still needs roughly the same things they needed at the dawn of the Web 25 years ago:
+
+\begin{itemize}
+\item A (usually available) machine on which to host content
+\item A persistent internet connection for that machine
+\item A persistent, external IP address (and domain name) for that connection
+\item Web server software and the ability to configure it.
+\end{itemize}
+
+Among these four needs, the first, second and fourth are virtually solved; in increasing parts of the world, most people have access to one or more computational devices throughout their day, whether they be smartphones, tablets, laptops, desktops, or game consoles.  Access to broadband has similarly continued to increase, with several countries in Europe, for example, access to high-speed broadband (at the 100Mbit or higher) have been declared a basic human right.  With regard to the fourth concern, free, open source web servers such as Apache, lighttpd, Nginx are not only readily available but have also become secure, easy to configure and deploy thanks to the collective contributions of thousands of and projects such as FreedomBox, CozyCloud and the Rasperry PI. 
+
+With respect to external persistent IP addresses, this has remained a challenge; despited increased connectivity, persistent external IP addresses are not common.  NAT devices, organisational firewalls, mobile network provider gateways make such devices invisible to the external Internet, thereby impeding end-users's ability to set up servers on the machines in their homes for sharing with others.  A second factor has exacerbated this problem; being more mobile than ever before, people are increasingly relying not on not one, but a multiplicity of different methods for accessing the Internet throughout their day.  This means that for the various kinds of mobile devices people use, carry, wear or drive will be constantly peering with new providers, obtaining new addresses and names throughout their day.
+
+
+ 
+
+  (we note that the original Web Web browser supported both reading and writing web pages, functionality which was which were committed to the user's personal web server.   already allows people to act as information controllers  The first Web browser supported both reading and writing web pages, which were committed to the user's personal web server.  
+
+%%   
+
+%% To establish some context, we first provide an overview of existing proposed approaches to re-decentralising the Web. We then follow this with three challenges to achieving a Web with end-user as data controller: naming, connectivity and persistent availability.  Finally, we discuss several projects which provide glimpses at what such a Web with individuals in control may look like.
 
 %% ----------------------------------
 
@@ -161,36 +206,36 @@ from a variety of perspectives.  % put some of those here.
 % As result,  such as in order to create increased dependence,  more effective behavioural exploitating and advertising.
 
 
-The precise path to achieve this vision of re-democratisation remains unclear, and much debated.  
+% The precise path to achieve this vision of re-democratisation remains unclear, and much debated.  
 
- model of a Web client to provide end-users with information storage and serving capabilities?
+%  model of a Web client to provide end-users with information storage and serving capabilities?
 
-We posit that, architecturally, with increasingly advanced capabilities of web browsers, the Web is ready for increased functionality centred at the end user for fostering greater responsiblity and control.  
+% We posit that, architecturally, with increasingly advanced capabilities of web browsers, the Web is ready for increased functionality centred at the end user for fostering greater responsiblity and control.  
 
- of democratisation remains unclear.  Implicit  Specifically, we In order for any such approaches to be successful, they must be simple, open and, essentially minimal.  
+%  of democratisation remains unclear.  Implicit  Specifically, we In order for any such approaches to be successful, they must be simple, open and, essentially minimal.  
 
-We first analyse 75 ``indie web'' projects that have this goal, deriving four categories of systems. Next, based on the capabilities such systems provide, we provide an analysis of the needs in greatest demand, which, beyond information storage and hosting, include universal addressibility in the face of dynamic network connectivity, private, secure and anonymous communications, and simple programmability.  We then derive a set of design requirements for extending Web clients, and provide the example of a decentralised microblogging environment that maintains the Web's principles of minimal  commitment to achieve maximum interoperability and support for future change.
+% We first analyse 75 ``indie web'' projects that have this goal, deriving four categories of systems. Next, based on the capabilities such systems provide, we provide an analysis of the needs in greatest demand, which, beyond information storage and hosting, include universal addressibility in the face of dynamic network connectivity, private, secure and anonymous communications, and simple programmability.  We then derive a set of design requirements for extending Web clients, and provide the example of a decentralised microblogging environment that maintains the Web's principles of minimal  commitment to achieve maximum interoperability and support for future change.
 
-% \section{Introduction}
-The increasing centralisation of the Web remains the greatest threats to its continued existence as a democratic and ubiquitous shared medium of communication. Although architected as a decentralised system to ensure fair and equal access to all users, today the Web has become a highly centralised environment, dominated by very large institutions that each control all of the traffic that flows within their respective borders.  The result is that such institutions harbour an disproportionately large percentage of Web traffic, and, in turn, exercise an unprecedented degree of control over its governance and operation.
+% % \section{Introduction}
+% The increasing centralisation of the Web remains the greatest threats to its continued existence as a democratic and ubiquitous shared medium of communication. Although architected as a decentralised system to ensure fair and equal access to all users, today the Web has become a highly centralised environment, dominated by very large institutions that each control all of the traffic that flows within their respective borders.  The result is that such institutions harbour an disproportionately large percentage of Web traffic, and, in turn, exercise an unprecedented degree of control over its governance and operation.
 
-The very definition of a democratic medium requires that its administration and governance lie with its individual participants.  In this paper, coinciding with the 25th anniversary of the Web, we look at current citizen-led approaches to ``take back the Web'' in order to understand how future Web architectures might support greater autonomy for Web end-users.  The goal of this analysis is to, first, identify what is seen to be most lacking about the current information environments on the Web, and second, to understand the variety of approaches taken to address such needs.  Indeed, merely the notion of ``taking it back'' is not necessarily clear; such approaches call variations of degrees under which the responsibility of being a data controller moves back to end-users and software under their control, running, in some cases directly within the browser itself.  It is for this purpose that survey both the ways and 
+% The very definition of a democratic medium requires that its administration and governance lie with its individual participants.  In this paper, coinciding with the 25th anniversary of the Web, we look at current citizen-led approaches to ``take back the Web'' in order to understand how future Web architectures might support greater autonomy for Web end-users.  The goal of this analysis is to, first, identify what is seen to be most lacking about the current information environments on the Web, and second, to understand the variety of approaches taken to address such needs.  Indeed, merely the notion of ``taking it back'' is not necessarily clear; such approaches call variations of degrees under which the responsibility of being a data controller moves back to end-users and software under their control, running, in some cases directly within the browser itself.  It is for this purpose that survey both the ways and 
 	
-For the purpose of identifying functionality most needed towards enabling greater end-user autonomy of Web users, we start by identifying, collating, and the infastructure efforts recently produced by the ``indie web'' community.  From this analysis, we identify common functionality offered by each, and reflect on what such underlying needs such functionality  are meant to address.
+% For the purpose of identifying functionality most needed towards enabling greater end-user autonomy of Web users, we start by identifying, collating, and the infastructure efforts recently produced by the ``indie web'' community.  From this analysis, we identify common functionality offered by each, and reflect on what such underlying needs such functionality  are meant to address.
 
-In the second half of this paper, we select specific such functionality in the context of an example, focusing on microblogging service as an archetypal social platform.  In this analysis, we identify the basic data sharing activities such services currently provide to deliver their user experiences. For each of these activities, we consider adapting to a decentralised setting, and discuss the implications for web architectures in the future.
+% In the second half of this paper, we select specific such functionality in the context of an example, focusing on microblogging service as an archetypal social platform.  In this analysis, we identify the basic data sharing activities such services currently provide to deliver their user experiences. For each of these activities, we consider adapting to a decentralised setting, and discuss the implications for web architectures in the future.
 
-In the following sections, we first summarise the efforts of the \emph{indie web camp} movement towards building technologies for enabling end-users of the Web to take more control of their data. We then focus on this analysis of microblogging as a platform adapted to a decentralised setting.  Finally, we introduce two different approaches to decentralised Web architectures interoperating  through the Web in a decentralised manner to provide an effective microblogging platform that uses Web standards.
+% In the following sections, we first summarise the efforts of the \emph{indie web camp} movement towards building technologies for enabling end-users of the Web to take more control of their data. We then focus on this analysis of microblogging as a platform adapted to a decentralised setting.  Finally, we introduce two different approaches to decentralised Web architectures interoperating  through the Web in a decentralised manner to provide an effective microblogging platform that uses Web standards.
 
-\section{Motivation}
-Many have expressed a variety of views from the societal, cultural, to the psychological perils of the ever-widening gap in power and influence resulting from the consolidation of the world's information brokers to a few massive supersites, versus the rest of the Web, including individuals who consume and share information themeslves.
+% \section{Motivation}
+% Many have expressed a variety of views from the societal, cultural, to the psychological perils of the ever-widening gap in power and influence resulting from the consolidation of the world's information brokers to a few massive supersites, versus the rest of the Web, including individuals who consume and share information themeslves.
 
-People have expressed many motivations for seeking to return to a more decentralised Web, and reduce reliance upon large online information brokers for various reasons, spanning many aspects of privacy \cite{}, the protection of free-speech \cite{}, and the desire to have greater control. Currently, Facebook ``controls'' an increasing amount of the media industry, spanning news to entertainment, by fully controlling how much attention and exposure each story gets.  A recent study surveydd that 40\% of American adults got their news from Facebook, the single largest source  This control has resulted in a number of peculiar behaviours 
+% People have expressed many motivations for seeking to return to a more decentralised Web, and reduce reliance upon large online information brokers for various reasons, spanning many aspects of privacy \cite{}, the protection of free-speech \cite{}, and the desire to have greater control. Currently, Facebook ``controls'' an increasing amount of the media industry, spanning news to entertainment, by fully controlling how much attention and exposure each story gets.  A recent study surveydd that 40\% of American adults got their news from Facebook, the single largest source  This control has resulted in a number of peculiar behaviours 
 
-1. stable identifiers are important to the web.  (but people move)
-2. resource availability is important to the web. (but people get disconnected).
+% 1. stable identifiers are important to the web.  (but people move)
+% 2. resource availability is important to the web. (but people get disconnected).
 
-\section{Survey of ``Indie Web'' efforts}
+% ?\section{Survey of ``Indie Web'' efforts}
 
 There has been a recent rise in efforts to 're-decentralise' the Web. However, as most of such efforts have themselves been highly distributed, a coherent picture of these efforts have not previously been assembled, in particular towards identifying the ways that such projects complement or overlap with one another. Our first goal, thus was to understand the space of indie web efforts to chronicle both the areas where progress has been made, and, second and perhaps more importantly, to identify the capabilities that developers participating in such efforts see as needed to empower individuals on the Web. 
 
@@ -233,7 +278,7 @@ As described later, the projects in this category seem to all have several featu
 % Bitmessage
 % Briar
 
-\subsection{Distributed Storage Environments}
+% \subsection{Distributed Storage Environments}
 % Bitcloud 
 % DHTs
 % Bittorrent 
