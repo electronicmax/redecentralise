@@ -176,22 +176,30 @@ There are also a variety of efforts around decentralised social applications, su
 
 %What are these obstacles? One has already solved itself; the browser is no longer a read-only surface for rendering static content; the browser has become the core engine for running the huge array of single-page applications (SPA) which has become the de-facto method of providing rich, interactive experiences on-line.  The rise of SPAs for everything from games to desktop office software has driven an ever-increasing hunger for faster, better browser functionality and APIs.  
 
-\section{Hosting Your Own Web Server in 2015}
+\section{Barriers to Hosting One's Own Web Server}
 
 Given the huge advances across the Web in capability of delivering content, building interactive experiences, mobilising end-users, we have not seen a corresponding increase in ease of setting up a web server.  Today, a person wishing to host content him or herself still needs roughly the same things they needed at the dawn of the Web 25 years ago:
 
 \begin{itemize}
 \item A (usually available) machine on which to host content
 \item A persistent internet connection for that machine
-\item A persistent, external IP address (and domain name) for that connection
-\item Web server software and the ability to configure it.
+\item A persistent, external IP address for that connection
+\item A domain name for that address
+\item Web server software, and time and expertise to configure it.
 \end{itemize}
 
-Among these four needs, the first, second and fourth are virtually solved; in increasing parts of the world, most people have access to one or more computational devices throughout their day, whether they be smartphones, tablets, laptops, desktops, or game consoles.  Access to broadband has similarly continued to increase, with several countries in Europe, for example, access to high-speed broadband (at the 100Mbit or higher) have been declared a basic human right.  With regard to the fourth concern, free, open source web servers such as Apache, lighttpd, Nginx are not only readily available but have also become secure, easy to configure and deploy thanks to the collective contributions of thousands of and projects such as FreedomBox, CozyCloud and the Rasperry PI. 
+Among these four needs, the first, second and fourth are virtually solved; in increasing parts of the world, most people have access to one or more computational devices throughout their day, whether they be smartphones, tablets, laptops, desktops, or game consoles.  Access to broadband has similarly continued to increase, with several countries in Europe, for example, access to high-speed broadband (at the 100Mbit or higher) have been declared a basic human right.  With regard to the fourth concern, free, open source web servers such as Apache, lighttpd, Nginx are not only readily available but have also become secure, easy to configure and deploy thanks to the collective contributions of thousands of and projects such as FreedomBox, CozyCloud and the Rasperry PI NOOBS project. 
 
-With respect to external persistent IP addresses, this has remained a challenge; despited increased connectivity, persistent external IP addresses are not common.  NAT devices, organisational firewalls, mobile network provider gateways make such devices invisible to the external Internet, thereby impeding end-users's ability to set up servers on the machines in their homes for sharing with others.  A second factor has exacerbated this problem; being more mobile than ever before, people are increasingly relying not on not one, but a multiplicity of different methods for accessing the Internet throughout their day.  This means that for the various kinds of mobile devices people use, carry, wear or drive will be constantly peering with new providers, obtaining new addresses and names throughout their day.
+With respect to external persistent IP addresses, however, this has remained a challenge; despite increased connectivity, persistent external IP addresses are not common.  NAT devices, organisational firewalls, mobile network provider gateways make such devices invisible to the external Internet, thereby impeding end-users's ability to set up servers on the machines in their homes for sharing with others.  A second factor has exacerbated this problem; being more mobile than ever before, people are increasingly relying not on not one, but a multiplicity of different methods for accessing the Internet throughout their day.  This means that for the various kinds of mobile devices people use, carry, wear or drive will be constantly peering with new providers, obtaining new addresses and names throughout their day.
 
-\subsection{The Problem of Namoing}
+The lack of a simple unique IP address per device means that each person's devices change not only addresses, but names as they connect to different ISP providers throughout their day.  While services like DynDNS allows individuals to register persistent domain names for devices that dynamically change IP addresses, the fact that DynDNS unlikely end-users will register a domain name for their devices.  Despite plenty of press about the benefits of claiming a domain name on the Web for one's own, few Web users actually own their own Web domains, and still fewer use their domains for hosting their own information.  This 
+
+\section{Putting the Server Inside the Browser?}
+
+
+\subsection{The Problem of Naming}
+
+Persistent identifiers have been critical to the Web since its inception.  On the Web, Uniform Resource Locators (URLs) and Uniform Resource Identifiers (URIs) uniquely 
 
 
 
