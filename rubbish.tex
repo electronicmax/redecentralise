@@ -1,0 +1,168 @@
+%Yet, what such architectures lack is the flexibility and generality that continues to make the Web not only the primary platform of choice for deploying apps and services, and also which benefits from the collective contributions of millions of developers publishing common libraries and tools, thanks to the open standards that underlie it.
+
+%What are these obstacles? One has already solved itself; the browser is no longer a read-only surface for rendering static content; the browser has become the core engine for running the huge array of single-page applications (SPA) which has become the de-facto method of providing rich, interactive experiences on-line.  The rise of SPAs for everything from games to desktop office software has driven an ever-increasing hunger for faster, better browser functionality and APIs.  
+
+% \section{Barriers to Hosting One's Own Web Server}
+
+% Given the huge advances across the Web in capability of delivering content, building interactive experiences, mobilising end-users, we have not seen a corresponding increase in ease of setting up a web server.  Today, a person wishing to host content him or herself still needs roughly the same things they needed at the dawn of the Web 25 years ago:
+
+% \begin{itemize}
+% \item A (usually available) machine on which to host content
+% \item A persistent internet connection for that machine
+% \item A persistent, external IP address for that connection
+% \item A domain name for that address
+% \item Web server software, and time and expertise to configure it.
+% \end{itemize}
+
+% Among these four needs, the first, second and fourth are virtually solved; in increasing parts of the world, most people have access to one or more computational devices throughout their day, whether they be smartphones, tablets, laptops, desktops, or game consoles.  Access to broadband has similarly continued to increase, with several countries in Europe, for example, access to high-speed broadband (at the 100Mbit or higher) have been declared a basic human right.  With regard to the fourth concern, free, open source web servers such as Apache, lighttpd, Nginx are not only readily available but have also become secure, easy to configure and deploy thanks to the collective contributions of thousands of and projects such as FreedomBox, CozyCloud and the Rasperry PI NOOBS project. 
+
+% With respect to external persistent IP addresses, however, this has remained a challenge; despite increased connectivity, persistent external IP addresses are not common.  NAT devices, organisational firewalls, mobile network provider gateways make such devices invisible to the external Internet, thereby impeding end-users's ability to set up servers on the machines in their homes for sharing with others.  A second factor has exacerbated this problem; being more mobile than ever before, people are increasingly relying not on not one, but a multiplicity of different methods for accessing the Internet throughout their day.  This means that for the various kinds of mobile devices people use, carry, wear or drive will be constantly peering with new providers, obtaining new addresses and names throughout their day.
+
+% The lack of a simple unique IP address per device means that each person's devices change not only addresses, but names as they connect to different ISP providers throughout their day.  While services like DynDNS allows individuals to register persistent domain names for devices that dynamically change IP addresses, the fact that DynDNS unlikely end-users will register a domain name for their devices.  Despite plenty of press about the benefits of claiming a domain name on the Web for one's own, few Web users actually own their own Web domains, and still fewer use their domains for hosting their own information.  This 
+
+\section{Putting the Server Inside the Browser?}
+
+
+\subsection{The Problem of Naming}
+
+Persistent identifiers have been critical to the Web since its inception.  On the Web, Uniform Resource Locators (URLs) and Uniform Resource Identifiers (URIs) uniquely 
+
+
+
+%  (we note that the original Web Web browser supported both reading and writing web pages, functionality which was which were committed to the user's personal web server.   already allows people to act as information controllers  The first Web browser supported both reading and writing web pages, which were committed to the user's personal web server.  
+
+%%   
+
+%% To establish some context, we first provide an overview of existing proposed approaches to re-decentralising the Web. We then follow this with three challenges to achieving a Web with end-user as data controller: naming, connectivity and persistent availability.  Finally, we discuss several projects which provide glimpses at what such a Web with individuals in control may look like.
+
+%% ----------------------------------
+
+% to  such projects are varied and many In this paper, we critically interrogate what this means; is this a call to extend the current model of the Web or a call to fundamentally change how some aspect of how the Web currently works?
+
+% At the same time, it is now easier than ever for people to run their own web servers and host their own data.  Why, then, do people prefer centralised platform providers? 
+
+from a variety of perspectives.  % put some of those here. 
+ 
+% As result,  such as in order to create increased dependence,  more effective behavioural exploitating and advertising.
+
+
+% The precise path to achieve this vision of re-democratisation remains unclear, and much debated.  
+
+%  model of a Web client to provide end-users with information storage and serving capabilities?
+
+% We posit that, architecturally, with increasingly advanced capabilities of web browsers, the Web is ready for increased functionality centred at the end user for fostering greater responsiblity and control.  
+
+%  of democratisation remains unclear.  Implicit  Specifically, we In order for any such approaches to be successful, they must be simple, open and, essentially minimal.  
+
+% We first analyse 75 ``indie web'' projects that have this goal, deriving four categories of systems. Next, based on the capabilities such systems provide, we provide an analysis of the needs in greatest demand, which, beyond information storage and hosting, include universal addressibility in the face of dynamic network connectivity, private, secure and anonymous communications, and simple programmability.  We then derive a set of design requirements for extending Web clients, and provide the example of a decentralised microblogging environment that maintains the Web's principles of minimal  commitment to achieve maximum interoperability and support for future change.
+
+% % \section{Introduction}
+% The increasing centralisation of the Web remains the greatest threats to its continued existence as a democratic and ubiquitous shared medium of communication. Although architected as a decentralised system to ensure fair and equal access to all users, today the Web has become a highly centralised environment, dominated by very large institutions that each control all of the traffic that flows within their respective borders.  The result is that such institutions harbour an disproportionately large percentage of Web traffic, and, in turn, exercise an unprecedented degree of control over its governance and operation.
+
+% The very definition of a democratic medium requires that its administration and governance lie with its individual participants.  In this paper, coinciding with the 25th anniversary of the Web, we look at current citizen-led approaches to ``take back the Web'' in order to understand how future Web architectures might support greater autonomy for Web end-users.  The goal of this analysis is to, first, identify what is seen to be most lacking about the current information environments on the Web, and second, to understand the variety of approaches taken to address such needs.  Indeed, merely the notion of ``taking it back'' is not necessarily clear; such approaches call variations of degrees under which the responsibility of being a data controller moves back to end-users and software under their control, running, in some cases directly within the browser itself.  It is for this purpose that survey both the ways and 
+	
+% For the purpose of identifying functionality most needed towards enabling greater end-user autonomy of Web users, we start by identifying, collating, and the infastructure efforts recently produced by the ``indie web'' community.  From this analysis, we identify common functionality offered by each, and reflect on what such underlying needs such functionality  are meant to address.
+
+% In the second half of this paper, we select specific such functionality in the context of an example, focusing on microblogging service as an archetypal social platform.  In this analysis, we identify the basic data sharing activities such services currently provide to deliver their user experiences. For each of these activities, we consider adapting to a decentralised setting, and discuss the implications for web architectures in the future.
+
+% In the following sections, we first summarise the efforts of the \emph{indie web camp} movement towards building technologies for enabling end-users of the Web to take more control of their data. We then focus on this analysis of microblogging as a platform adapted to a decentralised setting.  Finally, we introduce two different approaches to decentralised Web architectures interoperating  through the Web in a decentralised manner to provide an effective microblogging platform that uses Web standards.
+
+% \section{Motivation}
+% Many have expressed a variety of views from the societal, cultural, to the psychological perils of the ever-widening gap in power and influence resulting from the consolidation of the world's information brokers to a few massive supersites, versus the rest of the Web, including individuals who consume and share information themeslves.
+
+% People have expressed many motivations for seeking to return to a more decentralised Web, and reduce reliance upon large online information brokers for various reasons, spanning many aspects of privacy \cite{}, the protection of free-speech \cite{}, and the desire to have greater control. Currently, Facebook ``controls'' an increasing amount of the media industry, spanning news to entertainment, by fully controlling how much attention and exposure each story gets.  A recent study surveydd that 40\% of American adults got their news from Facebook, the single largest source  This control has resulted in a number of peculiar behaviours 
+
+% 1. stable identifiers are important to the web.  (but people move)
+% 2. resource availability is important to the web. (but people get disconnected).
+
+% ?\section{Survey of ``Indie Web'' efforts}
+
+There has been a recent rise in efforts to 're-decentralise' the Web. However, as most of such efforts have themselves been highly distributed, a coherent picture of these efforts have not previously been assembled, in particular towards identifying the ways that such projects complement or overlap with one another. Our first goal, thus was to understand the space of indie web efforts to chronicle both the areas where progress has been made, and, second and perhaps more importantly, to identify the capabilities that developers participating in such efforts see as needed to empower individuals on the Web. 
+
+In this section, we summarise the results of sampling and surveying a large number of such indie web projects, first to identify what each of these projects are meant to achieve, and second, to reflect upon the underlying needs that such projects indicate.
+
+\subsection{Method}
+We attempted to get a representative sample using a combination of approaches: first, we identified two large wikis directories dedicated to such projects, which included the \emph{Indie Web}\footnote{} and the \emph{Alternative Internet}\footnote{}. 
+
+We then attempted to derive a set of categories out of the systems idetified.  For this, we used an iterative approach, in which we attempted to create the most specific descriptions that would characterise, at a high level, what each system accomplished while ensuring that each category had at least one system.
+
+\subsection{Results: Systems Surveyed}
+
+\begin{figure*}[tb]
+\begin{tabular}{ l p{2.8in} p{2.3in} }
+type & description & examples \\ \hline
+  ``Personal Clouds'' & Largely standalone containers for hosting end-user web applications on personal hardware and VMs, including e-mail, calendaring tools, file storage and sharing & FreedomBox, Owncloud, arkOS, Sandstorm \\
+  Anonymising Networks & support anonymous communciations, either at the packet-level or message-level, and robust/overlay routing & cjdns, i2p, bitmessage, briar \\
+  Distributed Storage Environments & provide storage abstractions over multiple nodes & cjdns \\
+  Other & other related services include: cryptocurrencies, identity providers, social network applications & Bitcoin, \\
+\end{tabular}
+\end{figure*}
+
+From the YYY systems surveyed, we selected the XXX systems that were inherently decentralised and designed for user-
+
+\subsubsection{Personal Cloud projects}
+
+The first category consist of \emph{personal cloud} projects, which consist of software (and in some cases, hardware) platforms designed to allow end-users to more easily set-up, host and manage web applications for their personal or private use.  Such projects vary considerably in scope and complexity. Some projects encompass custom distributions of a popular FLOSS operating systems (typically GNU/Linux), designed to be hosted on low-cost embedded hardware, such as Raspberry PIs (e.g. xXX) or BeagleBones (e.g. XXX), or commodity hosting services (e.g. EC2 or Azure). 
+
+On top of such underlying operating systems, typically lies an ensemble of services, typically consisting of mail servers, a standard Web server, file sharing services and a database. FreedomBox is one of the original and most comprehensive of such platforms, which offers both standard e-mail, web and file storage but also provides utilities for establishing secure communications (through PGP tools and tor).  Sandstorm\footnote{} takes a slightly different approach, designing a docker-inspired modular architecture for installing and configuring web-apps that have traditionally required manual web-server configuration. 
+
+\subsubsection{Encrypted/Anonymous Overlay Networks}
+
+The second category consist of tools for secure and anonymous communications.  These projects range from network-level systems that provide addressing and routing (such as cjdns and i2p) to end-user applications (such as Bitmessage Briar), to projects that straddle the two (such as tor). While some projects work to route existing IP- and TCP- applications (including the Web), others are application specific (e.g. specific to messaging, despite being payload independent).
+
+As described later, the projects in this category seem to all have several features in common , they provide different degrees of support for the underlying connectivity;including addressing and message routing) , while others address connectivity issues, including partially disconnection and firewall traversal
+
+% cjdns
+% tor
+% i2p
+% Bitmessage
+% Briar
+
+% \subsection{Distributed Storage Environments}
+% Bitcloud 
+% DHTs
+% Bittorrent 
+% MaidSafe
+% BaseParadigm
+% Avatar
+
+% \subsection{Results: Needs}
+
+% \subsubsection{Addressability}
+% \subsubsection{Reachability}
+% \subsubsection{Anonymity}
+% \subsubsection{Secure \& authenticated communication}
+% \subsubsection{Pub/sub functionality}
+% \subsubsection{Data storage}
+% \subsubsection{Distributed Consensus \& Fault Tolerance}
+% 	Askemos
+% \subsubsection{Application Development Environments}
+% \subsection{End-user service composition}
+
+% \section{Desired Properties}
+
+% Working with the existing Web 
+% Decentralised and Disconnectable
+% 	No central locus of control
+% “Centralised Experience”
+% Efficiency
+% End-user Control
+% Privacy and Anonymity
+% Technical Implications
+
+% \subsection{Implementations}
+% Case Example: Microblogging
+% 	Broadcast posts/Timeline Syndication
+% 	Replies and comments
+% Retweets/Reblogs
+% Mentions
+% Search, Trending	
+% Anonymous Posting
+% Evaluation
+% Implications and Future Work
+
+% \section{Conclusion}
+% The Web is by no means a purely technical system; socio-economic factors have largely been responsible for its centralisation.  However, we believe that architectural considerations and patterns can reduce the barriers needed for the developer community to
+
+%ACKNOWLEDGMENTS are optional
+% \section{Acknowledgments}
